@@ -15,19 +15,15 @@ clock() {
 }
 
 weather() {
-	wea="$(./weather.sh)"
+	wea="$(./weather.sh &)"
 	echo "%{B#$bg1}%{F#$dfg}    #  $wea    %{B#$bg}%{F#$fg}"
 }
 
 while true; do
-	window="$(window)"
 	desktop="$(desktop)"
 	clock="$(clock)"
 	weather="$(weather)"
 
-	echo "%{l}$window\
-	$desktop\
-	%{c}$clock\
-	%{r}$weather"
+	echo "%{l}$desktop %{c}$clock %{r}$weather"
 
-done | lemonbar -g 1280x28+160+0 -d -B "#$bg" -F "#$fg" | bash
+done | lemonbar -g 1280x28+160+0 -d -B -f "System San Francisco Display 12" "#$bg" -F "#$fg" | bash

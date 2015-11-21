@@ -8,4 +8,4 @@ while read window; do
 	echo "  %{c}    $window    "
 done |
 
-lemonbar -g 220x28+0+0 -d -B \#FF$background -F \#FF$foreground | bash
+lemonbar -g 160x28+0+0 -d -B \#FF$background -F \#FF$foreground | bash
