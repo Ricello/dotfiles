@@ -7,7 +7,22 @@ fg="eff1f5"
 dfg="e0e0e0"
 
 desktop() {
-	echo "%{B#$bg1}%{I$HOME/lemonbar/window.xbm}     one     two    thr    fou     %{B#$bg}"	
+	current="$(wmctrl -d | grep -n -o "*" | cut -c 1)"
+
+	case $current in
+	1)
+		echo "%{B#$bg1}    one    two    thr    fou    %{B#$bg}"
+		;;
+	2)
+		echo "%{B#$bg1}    one    two    thr    fou    %{B#$bg}"
+		;;
+	3)
+		echo "%{B#$bg1}    one    two    thr    fou    %{B#$bg}"
+		;;
+	4)
+		echo "%{B#$bg1}    one    two    thr    fou    %{B#$bg}"
+		;;
+	esac
 }
 
 clock() {
@@ -26,4 +41,4 @@ while true; do
 
 	echo "%{l}$desktop %{c}$clock %{r}$weather"
 
-done | lemonbar -g 1280x28+160+0 -d -B -f "System San Francisco Display 12" "#$bg" -F "#$fg" | bash
+done | lemonbar -g 1280x28+160+0 -b -d -f "Inconsolata:size=9" -B "#$bg" -F "#$fg" | bash

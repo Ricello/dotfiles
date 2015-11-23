@@ -28,212 +28,212 @@
       <size>8</size>
       <weight>normal</weight>
       <slant>normal</slant>
-    </font>
-    <font place="InactiveWindow">
-      <name>cure</name>
-      <size>8</size>
-      <weight>normal</weight>
-      <slant>normal</slant>
-    </font>
-    <font place="MenuHeader">
-      <name>cure</name>
-      <size>8</size>
-      <weight>normal</weight>
-      <slant>normal</slant>
-    </font>
-    <font place="MenuItem">
-      <name>cure</name>
-      <size>8</size>
-      <weight>normal</weight>
-      <slant>normal</slant>
-    </font>
-    <font place="ActiveOnScreenDisplay">
-      <name>cure</name>
-      <size>8</size>
-      <weight>normal</weight>
-      <slant>normal</slant>
-    </font>
-    <font place="InactiveOnScreenDisplay">
-      <name>cure</name>
-      <size>8</size>
-      <weight>normal</weight>
-      <slant>normal</slant>
-    </font>
-  </theme>
-  <desktops>
-    <number>3</number>
-    <firstdesk>1</firstdesk>
-    <popupTime>0</popupTime>
-    <names/>
-  </desktops>
-  <resize>
-    <drawContents>yes</drawContents>
-    <popupShow>Never</popupShow>
-    <popupPosition>Center</popupPosition>
-    <popupFixedPosition>
-      <x>0</x>
-      <y>0</y>
-    </popupFixedPosition>
-  </resize>
-  <margins>
-    <top>0</top>
-    <bottom>0</bottom>
-    <left>0</left>
-    <right>0</right>
-  </margins>
-  <keyboard>
-    <keybind key="W-Left">
-      <action name="SendToDesktop">
-        <to>left</to>
-        <wrap>yes</wrap>
-      </action>
-    </keybind>
-    <keybind key="W-Right">
-      <action name="SendToDesktop">
-        <to>right</to>
-        <wrap>yes</wrap>
-      </action>
-    </keybind>
-    <keybind key="W-q">
-      <action name="Close"/>
-    </keybind>
-    <keybind key="W-w">
-      <action name="SendToDesktop">
-        <to>2</to>
-      </action>
-    </keybind>
-    <keybind key="W-e">
-      <action name="SendToDesktop">
-        <to>2</to>
-      </action>
-    </keybind>
-    <keybind key="W-1">
-      <action name="SendToDesktop">
-        <to>1</to>
-      </action>
-    </keybind>
-    <keybind key="W-2">
-      <action name="SendToDesktop">
-        <to>2</to>
-      </action>
-    </keybind>
-    <keybind key="W-3">
-      <action name="SendToDesktop">
-        <to>3</to>
-      </action>
-    </keybind>
-    <keybind key="W-Return">
-      <action name="Execute">
-        <command>urxvtc</command>
-      </action>
-    </keybind>
-    <keybind key="C-space">
-      <action name="Execute">
-        <command>mpc -q toggle</command>
-      </action>
-    </keybind>
-    <keybind key="C-Left">
-      <action name="Execute">
-        <command>mpc -q seek -10</command>
-      </action>
-    </keybind>
-    <keybind key="C-Right">
-      <action name="Execute">
-        <command>mpc -q seek +10</command>
-      </action>
-    </keybind>
-    <keybind key="C-Up">
-      <action name="Execute">
-        <command>mpc -q prev</command>
-      </action>
-    </keybind>
-    <keybind key="C-Down">
-      <action name="Execute">
-        <command>mpc -q next</command>
-      </action>
-    </keybind>
-    <keybind key="C-r">
-      <action name="Execute">
-        <command>mpc -q random</command>
-      </action>
-    </keybind>
-  </keyboard>
-  <mouse>
-    <dragThreshold>1</dragThreshold>
-    <doubleClickTime>500</doubleClickTime>
-    <screenEdgeWarpTime>0</screenEdgeWarpTime>
-    <screenEdgeWarpMouse>false</screenEdgeWarpMouse>
-    <context name="Frame">
-      <mousebind button="W-Left" action="Drag">
-        <action name="Move"/>
-      </mousebind>
-      <mousebind button="W-Right" action="Drag">
-        <action name="Resize"/>
-      </mousebind>
-      <mousebind button="W-Middle" action="Press">
-        <action name="Lower"/>
-        <action name="FocusToBottom"/>
-        <action name="Unfocus"/>
-      </mousebind>
-      <mousebind button="W-Up" action="Click">
-        <action name="GoToDesktop">
-          <to>previous</to>
-        </action>
-      </mousebind>
-      <mousebind button="W-Down" action="Click">
-        <action name="GoToDesktop">
-          <to>next</to>
-        </action>
-      </mousebind>
-    </context>
-    <context name="Titlebar">
-      <mousebind button="Left" action="Drag">
-        <action name="Move"/>
-      </mousebind>
-      <mousebind button="Left" action="DoubleClick">
-        <action name="ToggleMaximize"/>
-      </mousebind>
-    </context>
-    <context name="Titlebar Top Right Bottom Left TLCorner TRCorner BRCorner BLCorner">
-      <mousebind button="Left" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="Unshade"/>
-      </mousebind>
-      <mousebind button="Middle" action="Press">
-        <action name="Lower"/>
-        <action name="FocusToBottom"/>
-        <action name="Unfocus"/>
-      </mousebind>
-      <mousebind button="Right" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="ShowMenu">
-          <menu>client-menu</menu>
-        </action>
-      </mousebind>
-    </context>
-    <context name="Client">
-      <mousebind button="Left" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-      </mousebind>
-      <mousebind button="Middle" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-      </mousebind>
-      <mousebind button="Right" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-      </mousebind>
-    </context>
-    <context name="Iconify">
-	</context>
-    <context name="Maximize">
-	</context>
-    <context name="Close">
-	</context>
-    <context name="Desktop">
+</font>
+<font place="InactiveWindow">
+<name>cure</name>
+<size>8</size>
+<weight>normal</weight>
+<slant>normal</slant>
+</font>
+<font place="MenuHeader">
+<name>cure</name>
+<size>8</size>
+<weight>normal</weight>
+<slant>normal</slant>
+</font>
+<font place="MenuItem">
+<name>cure</name>
+<size>8</size>
+<weight>normal</weight>
+<slant>normal</slant>
+</font>
+<font place="ActiveOnScreenDisplay">
+<name>cure</name>
+<size>8</size>
+<weight>normal</weight>
+<slant>normal</slant>
+</font>
+<font place="InactiveOnScreenDisplay">
+<name>cure</name>
+<size>8</size>
+<weight>normal</weight>
+<slant>normal</slant>
+</font>
+</theme>
+<desktops>
+<number>3</number>
+<firstdesk>1</firstdesk>
+<popupTime>0</popupTime>
+<names/>
+</desktops>
+<resize>
+<drawContents>yes</drawContents>
+<popupShow>Never</popupShow>
+<popupPosition>Center</popupPosition>
+<popupFixedPosition>
+<x>0</x>
+<y>0</y>
+</popupFixedPosition>
+</resize>
+<margins>
+<top>0</top>
+<bottom>0</bottom>
+<left>0</left>
+<right>0</right>
+</margins>
+<keyboard>
+<keybind key="W-Left">
+<action name="SendToDesktop">
+<to>left</to>
+<wrap>yes</wrap>
+</action>
+</keybind>
+<keybind key="W-Right">
+<action name="SendToDesktop">
+<to>right</to>
+<wrap>yes</wrap>
+</action>
+</keybind>
+<keybind key="W-q">
+<action name="Close"/>
+</keybind>
+<keybind key="W-w">
+<action name="SendToDesktop">
+<to>2</to>
+</action>
+</keybind>
+<keybind key="W-e">
+<action name="SendToDesktop">
+<to>2</to>
+</action>
+</keybind>
+<keybind key="W-1">
+<action name="SendToDesktop">
+<to>1</to>
+</action>
+</keybind>
+<keybind key="W-2">
+<action name="SendToDesktop">
+<to>2</to>
+</action>
+</keybind>
+<keybind key="W-3">
+<action name="SendToDesktop">
+<to>3</to>
+</action>
+</keybind>
+<keybind key="W-Return">
+<action name="Execute">
+<command>urxvtc</command>
+</action>
+</keybind>
+<keybind key="C-space">
+<action name="Execute">
+<command>mpc -q toggle</command>
+</action>
+</keybind>
+<keybind key="C-Left">
+<action name="Execute">
+<command>mpc -q seek -10</command>
+</action>
+</keybind>
+<keybind key="C-Right">
+<action name="Execute">
+<command>mpc -q seek +10</command>
+</action>
+</keybind>
+<keybind key="C-Up">
+<action name="Execute">
+<command>mpc -q prev</command>
+</action>
+</keybind>
+<keybind key="C-Down">
+<action name="Execute">
+<command>mpc -q next</command>
+</action>
+</keybind>
+<keybind key="C-r">
+<action name="Execute">
+<command>mpc -q random</command>
+</action>
+</keybind>
+</keyboard>
+<mouse>
+<dragThreshold>1</dragThreshold>
+<doubleClickTime>500</doubleClickTime>
+<screenEdgeWarpTime>0</screenEdgeWarpTime>
+<screenEdgeWarpMouse>false</screenEdgeWarpMouse>
+<context name="Frame">
+<mousebind button="W-Left" action="Drag">
+<action name="Move"/>
+</mousebind>
+<mousebind button="W-Right" action="Drag">
+<action name="Resize"/>
+</mousebind>
+<mousebind button="W-Middle" action="Press">
+<action name="Lower"/>
+<action name="FocusToBottom"/>
+<action name="Unfocus"/>
+</mousebind>
+<mousebind button="W-Up" action="Click">
+<action name="GoToDesktop">
+  <to>previous</to>
+</action>
+</mousebind>
+<mousebind button="W-Down" action="Click">
+<action name="GoToDesktop">
+  <to>next</to>
+</action>
+</mousebind>
+</context>
+<context name="Titlebar">
+<mousebind button="Left" action="Drag">
+<action name="Move"/>
+</mousebind>
+<mousebind button="Left" action="DoubleClick">
+<action name="ToggleMaximize"/>
+</mousebind>
+</context>
+<context name="Titlebar Top Right Bottom Left TLCorner TRCorner BRCorner BLCorner">
+<mousebind button="Left" action="Press">
+<action name="Focus"/>
+<action name="Raise"/>
+<action name="Unshade"/>
+</mousebind>
+<mousebind button="Middle" action="Press">
+<action name="Lower"/>
+<action name="FocusToBottom"/>
+<action name="Unfocus"/>
+</mousebind>
+<mousebind button="Right" action="Press">
+<action name="Focus"/>
+<action name="Raise"/>
+<action name="ShowMenu">
+  <menu>client-menu</menu>
+</action>
+</mousebind>
+</context>
+<context name="Client">
+<mousebind button="Left" action="Press">
+<action name="Focus"/>
+<action name="Raise"/>
+</mousebind>
+<mousebind button="Middle" action="Press">
+<action name="Focus"/>
+<action name="Raise"/>
+</mousebind>
+<mousebind button="Right" action="Press">
+<action name="Focus"/>
+<action name="Raise"/>
+</mousebind>
+</context>
+<context name="Iconify">
+</context>
+<context name="Maximize">
+</context>
+<context name="Close">
+</context>
+<context name="Desktop">
 	</context>
     <context name="Root">
       <mousebind button="Right" action="Press">
