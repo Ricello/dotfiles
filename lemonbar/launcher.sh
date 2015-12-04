@@ -2,3 +2,4 @@
 
 ./bar.sh &
 ./window.sh &
+./weather.sh &

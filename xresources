@@ -5,26 +5,24 @@
 *url-launcher:       firefox
 *matcher.button:     1
 
-
 !! RICE
 
 ! Make minimal
 *scrollBar:          false
-*internalBorder:     13
-*.geometry:          80x20
+*internalBorder:     8
 
-! Set font
-*font: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso8859-1 
-*boldFont: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso8859-1
+!! FONTS
+*font: xft:Inconsolata:size=9
+*fontBold: xft:Inconsolata:size=9
 
 !! COLORS
 
 ! Misc
-*foreground:         #E8DFD6
-*background:         #2E3A38
-*cursorColor:        #F3D5C9
-*highlightColor:     #009688
-*highlightTextColor: #ef9a9a
+*foreground:         #e8dfd6
+*background:         #2f323b
+*cursorColor:        #3f424b
+*highlightColor:     #3f424b
+*highlightTextColor: #2f323b
 
 ! Black
 *color0:             #37413F
