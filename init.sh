@@ -1,6 +1,6 @@
 #!/bin/bash
 
-xrdb -merge /root/.Xresources
-feh --bg-fill /root/wallpaper.png
-cp /root/dotfiles/openbox/*.xml /home/student/.config/openbox
+xrdb -merge /home/student/.Xresources-sorbet
+feh --bg-fill /home/student/.wallpaper.png
+cp ./openbox/*.xml /home/student/.config/openbox
 
