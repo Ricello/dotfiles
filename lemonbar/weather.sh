@@ -1,7 +1,10 @@
-#!/bin/bash
+#!/bin/zsh
 
-# Get weather info
-url="http://www.accuweather.com/pl/pl/biaystok/275110/weather-forecast/275110"
+bg="3f424b"
+fg="e0e0e0"
 
-# Print weather info
-wget -q -O- "$url" | awk -F\' '/acm_RecentLocationsCarousel\.push/{print "Białystok, "$12"°"}'| head -1
+while true; do
+	current="$(weather &)"
+	echo "%{B#$bg}%{F#$fg}%{c}\uf0c2  $current"
+done | lemonbar -g 160x28+1280+0 -b -d -f "Inconsolata:size=9" -f "FontAwesome:size=9" -B "#$bg" -F "#$fg" | bash
+
