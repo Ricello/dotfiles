@@ -35,4 +35,4 @@ while true; do
 	echo "%{l}$desktop%{c}$clock"
 	sleep 0.1
 
-done | lemonbar -g 1100x28+180+0 -b -d -f "Inconsolata:size=9" -f "FontAwesome:size=9" -B "#$bg" -F "#$fg" | bash
+done | lemonbar -g 1080x28+180+0 -b -d -f "Inconsolata:size=9" -f "FontAwesome:size=9" -B "#$bg" -F "#$fg" | bash

@@ -12,8 +12,8 @@
 *internalBorder:     8
 
 !! FONTS
-*font: xft:Inconsolata:size=9
-*fontBold: xft:Inconsolata:size=9
+*font:     xft:Inconsolata:size=9, xft:FontAwesome:size=8
+*fontBold: xft:Inconsolata:size=9, xft:FontAwesome:size=8
 
 !! COLORS
 
