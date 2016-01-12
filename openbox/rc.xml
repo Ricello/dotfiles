@@ -20,7 +20,7 @@
 	</placement>
 	<theme>
 		<name>minato</name>
-		<titleLayout>LC</titleLayout>
+		<titleLayout>LIMC</titleLayout>
 		<keepBorder>yes</keepBorder>
 		<animateIconify>yes</animateIconify>
 		<font place="ActiveWindow">
@@ -557,7 +557,10 @@
 	    <showIcons>no</showIcons>
 	    <manageDesktops>no</manageDesktops>
 	  </menu>
-	  <applications>
+		<applications>
+			<application class="Firefox" name="firefox" type="normal">
+				<decor>no</decor>
+			</application>
 	  </applications>
 	  <dock>
 	    <position>TopLeft</position>

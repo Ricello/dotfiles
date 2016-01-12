@@ -10,5 +10,8 @@ xrdb -merge $home/.Xresources
 # Wallpaper
 feh --bg-fill $home/.wallpaper.png
 
-# Lemonbar
-$home/.lemonbar/launcher.sh & disown
+# Compton
+compton &
+
+# Bar
+tint2 &
